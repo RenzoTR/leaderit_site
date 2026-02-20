@@ -22,7 +22,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wide text-text">Links rápidos</h4>
+            <h4 className="text-sm font-semibold uppercase tracking-wide text-text">Acesso rápido</h4>
             <ul className="mt-3 space-y-2">
               {siteContent.navLinks
               .filter((link) => link.label !== 'Contato')
