@@ -24,7 +24,9 @@ export function Footer() {
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-wide text-text">Links rápidos</h4>
             <ul className="mt-3 space-y-2">
-              {siteContent.navLinks.map((link) => (
+              {siteContent.navLinks
+              .filter((link) => link.label !== 'Contato')
+              .map((link) => (
 
                 <li key={link.href}>
                   <a href={link.href} className="text-sm text-muted hover:text-primary">
