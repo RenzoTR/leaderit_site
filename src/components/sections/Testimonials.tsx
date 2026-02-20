@@ -10,7 +10,7 @@ export function Testimonials() {
         <h2 className="text-3xl font-extrabold  text-cyan-700 text-text-inverse sm:text-4xl">Depoimentos reais</h2>
 
         {/* Altere aqui os depoimentos */}
-        <div className="mt-8 grid gap-5 md:grid-cols-3 ">
+        <div className="mt-8 grid text-cyan-700 gap-5 md:grid-cols-3 ">
           {siteContent.testimonials.map((item) => (
             <Card key={item.company} className="bg-white/95">
               <p className="text-xs font-semibold uppercase tracking-wider text-primary">{item.company}</p>
