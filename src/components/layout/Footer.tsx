@@ -5,11 +5,11 @@ export function Footer() {
   return (
     <footer className="border-t border-border bg-surface py-10">
       <Container>
-        <div className="grid gap-8 md:grid-cols-3">
-          <div>
+        <div className="grid gap-16 md:grid-cols-2 lg:grid-cols-2">
+          {/* <div>
             <h3 className="text-lg font-bold text-primary">{siteContent.brand.name}</h3>
             <p className="mt-2 text-sm text-muted">{siteContent.brand.tagline}</p>
-          </div>
+          </div> */}
 
           {/* Altere aqui dados de contato/redes */}
           <div>
@@ -25,6 +25,7 @@ export function Footer() {
             <h4 className="text-sm font-semibold uppercase tracking-wide text-text">Links rápidos</h4>
             <ul className="mt-3 space-y-2">
               {siteContent.navLinks.map((link) => (
+
                 <li key={link.href}>
                   <a href={link.href} className="text-sm text-muted hover:text-primary">
                     {link.label}

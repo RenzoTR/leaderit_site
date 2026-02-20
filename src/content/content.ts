@@ -6,10 +6,11 @@ export const siteContent = {
   brand: {
     name: 'LeaderIT',
     tagline: 'Inovação e Segurança'
+    
   },
   links: {
-    ctaPrimary: '#contato',
-    ctaSecondary: 'https://wa.me/5500000000000'
+    ctaPrimary: 'mailto:contato@leaderit.com.br',
+    ctaSecondary: 'https://wa.me/5527988609240'
   },
   navLinks: [
     { label: 'Home', href: '#home' },
@@ -20,7 +21,7 @@ export const siteContent = {
   ] as NavLink[],
   hero: {
     title:
-      'Automação com inteligência artificial, sistemas web, CAIO e conformidade LGPD/ISO 27001 sem burocracia',
+      'Automação com IA, Sistemas WEB, CAIO e LGPD sem burocracia',
     subtitle:
       'Transforme operações críticas com decisões orientadas por dados, segurança contínua e processos digitais mais rápidos.',
     bullets: [
@@ -67,12 +68,12 @@ export const siteContent = {
     ]
   },
   partners: [
-    { name: 'Drut', logo: '/assets/partners/drut.svg' },
-    { name: 'Vembu', logo: '/assets/partners/vembu.svg' },
-    { name: 'Fortinet', logo: '/assets/partners/fortinet.svg' },
-    { name: 'Lenovo', logo: '/assets/partners/lenovo.svg' },
-    { name: 'Positivo', logo: '/assets/partners/positivo.svg' },
-    { name: 'BlinkOps', logo: '/assets/partners/blinkops.svg' }
+    { name: 'Drut', logo: '/assets/partners/drut.png' },
+    { name: 'Vembu', logo: '/assets/partners/vembu.png' },
+    { name: 'Fortinet', logo: '/assets/partners/fortinet.png' },
+    { name: 'Lenovo', logo: '/assets/partners/lenovo.png' },
+    { name: 'Positivo', logo: '/assets/partners/positivo.png' },
+    { name: 'BlinkOps', logo: '/assets/partners/blinkops.png' }
   ],
   testimonials: [
     {
@@ -95,12 +96,12 @@ export const siteContent = {
     title: 'Pronto para automatizar com segurança?',
     description:
       'Converse com a LeaderIT e desenhe um plano prático para evoluir processos, compliance e performance digital.',
-    buttonLabel: 'Comece hoje'
+    buttonLabel: 'Enviar mensagem'
   },
   footer: {
     email: 'contato@leaderit.com.br',
-    phone: '+55 (11) 0000-0000',
-    address: 'São Paulo - SP',
+    phone: '+55 (27) 98860-9240',
+    address: 'Vitória, ES - Brasil',
     social: [
       { label: 'LinkedIn', href: 'https://www.linkedin.com' },
       { label: 'Instagram', href: 'https://www.instagram.com' }

@@ -7,7 +7,7 @@ export function Header() {
       <Container className="flex h-16 items-center justify-between gap-4">
         {/* Altere aqui a logo do Header */}
         <a href="#home" aria-label="Ir para o início" className="inline-flex items-center">
-          <img src="/assets/illustrations/leaderit-logo.svg" alt="LeaderIT" className="h-10 w-auto" />
+          <img src="./assets/illustrations/home1.png" alt="LeaderIT" className="h-10 w-auto" />
         </a>
 
         {/* Altere aqui os links e CTA */}

@@ -22,10 +22,10 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="rounded-2xl border border-border bg-surface p-6">
+          <div className="rounded-2xl border border-border bg-surface p-6 h-auto max-w-xl rounded-base shadow-xl dark:shadow-gray-500">
             {/* Altere aqui a imagem da Hero */}
-            <img src="/assets/illustrations/hero-person.svg" alt="Ilustração de automação com IA" className="w-full" />
-            <ul className="mt-6 space-y-4 text-sm sm:text-base">
+            <img src="./assets/illustrations/hero.svg" alt="Ilustração de automação com IA" className="w-full" />
+            <ul className="mt-6 space-y-4 text-sm sm:text-base w-.2 h-.2">
               {siteContent.hero.bullets.map((item) => (
                 <li key={item} className="flex gap-3">
                   <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-accent" aria-hidden />
