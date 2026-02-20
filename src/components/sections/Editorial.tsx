@@ -11,7 +11,7 @@ export function Editorial() {
             <h2 className="text-5xl font-extrabold leading-tight sm:text-6xl">{siteContent.editorial.title}</h2>
             {/* Altere aqui a imagem do bloco editorial */}
             <div className="mt-10 overflow-hidden rounded-3xl bg-gradient-to-br from-primary/20 to-accent/30 p-6">
-              <img src="/assets/illustrations/editorial-illustration.svg" alt="Ilustração de inovação" className="w-full" />
+              <img src="./assets/illustrations/xxx.png" alt="Ilustração de inovação" className="w-full" />
             </div>
           </div>
 

@@ -16,7 +16,10 @@ export function Partners() {
           {/* Altere aqui/adicione logos */}
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
             {siteContent.partners.map((partner) => (
-              <div key={partner.name} className="rounded-lg border border-white/30 bg-white/85 p-4">
+              <div
+                key={partner.name}
+                className="rounded-lg border border-white/30 bg-white/85 p-4 transition-all duration-300 ease-out hover:-translate-y-1 hover:bg-white hover:shadow-lg"
+              >
                 <img src={partner.logo} alt={`Logo ${partner.name}`} className="h-10 w-full object-contain" loading="lazy" />
               </div>
             ))}

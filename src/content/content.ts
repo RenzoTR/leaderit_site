@@ -25,8 +25,9 @@ export const siteContent = {
     subtitle:
       'Transforme operações críticas com decisões orientadas por dados, segurança contínua e processos digitais mais rápidos.',
     bullets: [
-      'Automações inteligentes do atendimento à análise de dados.',
-      'Governança, riscos e compliance com IA aplicada em tempo real.',
+      'Automações inteligentes, do atendimento à análise de dados.',
+      'Governança, riscos e compliance com IA aplicada.',
+      'Sistemas e WebApps modernos sob-medida em tempo recorde.',
       'Adequação contínua a LGPD e ISO 27001 com rastreabilidade.'
     ]
   },
@@ -61,9 +62,9 @@ export const siteContent = {
           'Políticas, procedimentos e evidências sempre atualizados para auditorias e novas exigências regulatórias.'
       },
       {
-        title: 'Suporte Ampliado por IA',
+        title: 'Atendimento Personalizado e Proativo',
         description:
-          'Atendimento inteligente para antecipar dúvidas, monitorar rotinas e acelerar decisões do time.'
+          'Suporte inteligente para antecipar dúvidas e acelerar desenvolvimento sob medida.'
       }
     ]
   },
@@ -93,7 +94,7 @@ export const siteContent = {
     }
   ],
   finalCta: {
-    title: 'Pronto para automatizar com segurança?',
+    title: 'Pronto para transformar sua operação digital?',
     description:
       'Converse com a LeaderIT e desenhe um plano prático para evoluir processos, compliance e performance digital.',
     buttonLabel: 'Enviar mensagem'

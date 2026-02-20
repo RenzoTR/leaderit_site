@@ -10,7 +10,7 @@ export function Benefits() {
         {/* Altere aqui títulos, ícones e descrições */}
         <div className="grid gap-6 md:grid-cols-3">
           {siteContent.benefits.map((benefit) => (
-            <Card key={benefit.title} className="text-center justify-center items-center">
+            <Card key={benefit.title} className="text-center justify-center">
               <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full border border-primary/30 text-2xl text-primary">
                 ✦
               </div>

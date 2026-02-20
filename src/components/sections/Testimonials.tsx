@@ -7,7 +7,7 @@ export function Testimonials() {
   return (
     <Section id="depoimentos" className="bg-gradient-to-br from-accent/80 to-primary/80">
       <Container>
-        <h2 className="text-3xl font-extrabold  text-cyan-700 text-text-inverse sm:text-4xl">Depoimentos reais</h2>
+        <h2 className="text-3xl font-extrabold sm:text-4xl">Depoimentos reais</h2>
 
         {/* Altere aqui os depoimentos */}
         <div className="mt-8 grid text-cyan-700 gap-5 md:grid-cols-3 ">

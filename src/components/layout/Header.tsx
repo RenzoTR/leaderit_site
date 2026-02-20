@@ -3,7 +3,7 @@ import { Container } from '@/components/ui/Container';
 
 export function Header() {
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-border/70 bg-surface/95 backdrop-blur">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-border/70 bg-surface backdrop-blur-xl">
       <Container className="flex h-16 items-center justify-between gap-4">
         {/* Altere aqui a logo do Header */}
         <a href="#home" aria-label="Ir para o início" className="inline-flex items-center">
