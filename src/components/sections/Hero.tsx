@@ -22,7 +22,7 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="rounded-2xl border border-border bg-surface p-6 h-auto max-w-xl rounded-base shadow-xl dark:shadow-gray-500">
+          <div className="h-auto max-w-xl rounded-2xl border border-primary/20 bg-surface/90 p-6 shadow-xl shadow-primary/10 backdrop-blur transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-accent/20">
             {/* Altere aqui a imagem da Hero */}
             <img src="./assets/illustrations/hero.svg" alt="Ilustração de automação com IA" className="w-full" />
             <ul className="mt-6 space-y-4 text-sm sm:text-base w-.2 h-.2">
