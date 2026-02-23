@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 :root {
-  /* Altere aqui a paleta */
   --color-bg: #f2f4f5;
   --color-surface: #ffffff;
   --color-text: #087697;
@@ -27,11 +26,13 @@ html {
 
 body {
   margin: 0;
-  background: var(--color-bg);
+  background:
+    radial-gradient(circle at 10% -10%, rgb(0 208 255 / 25%), transparent 35%),
+    radial-gradient(circle at 90% 10%, rgb(14 79 184 / 18%), transparent 30%),
+    var(--color-bg);
   color: var(--color-text);
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
   text-rendering: optimizeLegibility;
-  animation: page-fade 500ms ease-out both;
 }
 
 a {
@@ -44,62 +45,57 @@ a {
   outline-offset: 2px;
 }
 
-main > section {
+.section-elegant {
+  position: relative;
+  opacity: 0.3;
+  transform: translate3d(0, 60px, 0) scale(0.98);
+  filter: blur(7px);
+  transition:
+    opacity 850ms cubic-bezier(0.2, 0.8, 0.22, 1),
+    transform 850ms cubic-bezier(0.2, 0.8, 0.22, 1),
+    filter 850ms cubic-bezier(0.2, 0.8, 0.22, 1);
+  will-change: transform, opacity, filter;
+}
+
+.section-elegant[data-visible='true'] {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+  filter: blur(0);
+}
+
+.section-elegant[data-visible='false'] {
+  opacity: 0.45;
+  transform: translate3d(0, 48px, 0) scale(0.985);
+}
+
+.section-elegant > * {
+  position: relative;
+}
+
+.section-elegant::before {
+  content: '';
+  position: absolute;
+  inset: 12% 8%;
+  z-index: -1;
+  border-radius: 32px;
+  background: linear-gradient(120deg, rgb(0 208 255 / 10%), rgb(14 79 184 / 0%));
   opacity: 0;
   transform: translateY(18px);
-  animation: section-reveal 700ms ease-out forwards;
+  transition: opacity 700ms ease, transform 700ms ease;
 }
 
-main > section:nth-of-type(1) {
-  animation-delay: 80ms;
-}
-
-main > section:nth-of-type(2) {
-  animation-delay: 140ms;
-}
-
-main > section:nth-of-type(3) {
-  animation-delay: 200ms;
-}
-
-main > section:nth-of-type(4) {
-  animation-delay: 260ms;
-}
-
-main > section:nth-of-type(5) {
-  animation-delay: 320ms;
-}
-
-main > section:nth-of-type(6) {
-  animation-delay: 380ms;
-}
-
-@keyframes page-fade {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes section-reveal {
-  from {
-    opacity: 0;
-    transform: translateY(18px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.section-elegant[data-visible='true']::before {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  * {
+  *,
+  *::before,
+  *::after {
     animation-duration: 1ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 1ms !important;
+    scroll-behavior: auto !important;
   }
 }
